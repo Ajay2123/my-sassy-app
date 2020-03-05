@@ -8,17 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './components/material.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    FormComponent
-  ],
-  imports: [
-    BrowserModule,
-    MaterialModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        FormComponent
+    ],
+    imports: [
+        BrowserModule,
+        MaterialModule,
+        BrowserAnimationsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

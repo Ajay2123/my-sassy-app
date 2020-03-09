@@ -2,19 +2,19 @@
     <div class="table">
         <div class="table-cell">
             <div class="modal">
-                <label 
-                [ngStyle]="fileSelected ? {'background-image': 'url(' + resultUrl + ')'}:'' "
-                [ngClass]="fileSelected ? 'hasImage' : ''"
-                id="profile" for="fileInput" (drop)="onDrop($event)" (dragover)="onDragOver($event)">
+                <label [ngStyle]="fileSelected ? {'background-image': 'url(' + resultUrl + ')'}:'' "
+                    [ngClass]="fileSelected ? 'hasImage' : ''" id="profile" for="fileInput" (drop)="onDrop($event)"
+                    (dragover)="onDragOver($event)">
                     <div class="dashes"></div>
                     <input type="file" name="fileInput" id="fileInput" (change)="previewFile()" class="inputfile"
                         required #fileInput />
                     <label>Click to browse or drag an image here</label>
                 </label>
                 <form (submit)="uploadFile($event)">
-                    <div class="editable"><i class="fa fa-pencil"></i>
-                        <h5 contenteditable>Someone@gmail.com</h5>
-                    </div>
+                    <mat-form-field class="title" appearance="standard">
+                        <mat-label>Input</mat-label>
+                        <input matInput>
+                      </mat-form-field>
                     <button>Upload</button>
                 </form>
             </div>

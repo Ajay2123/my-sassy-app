@@ -2,11 +2,15 @@
     <mat-grid-list cols="4" rowHeight="25%">
         <mat-grid-tile *ngFor="let tile of section1" [colspan]="tile.cols" [rowspan]="tile.rows"
             [style.background]="tile.color">
-            {{tile.text}}
+            <mat-grid-tile-footer>
+                {{tile.text}}
+            </mat-grid-tile-footer>
         </mat-grid-tile>
         <mat-grid-tile *ngFor="let tile of section2" [colspan]="tile.cols" [rowspan]="tile.rows"
             [style.background]="tile.color">
-            {{tile.text}}
+            <mat-grid-tile-footer>
+                {{tile.text}}
+            </mat-grid-tile-footer>
         </mat-grid-tile>
     </mat-grid-list>
 </div>

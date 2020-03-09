@@ -46,7 +46,7 @@ html {
     width: 300px;
     height: 400px;
     margin: 0 auto;
-    background: #fff;
+    background: lightseagreen;
     box-shadow: 0 40px 50px rgba(black, 0.35);
     padding: 40px;
 }
@@ -125,14 +125,13 @@ html {
     }
 }
 
-h5 {
-    height: 28px;
-    margin-bottom: 0px;
-    text-align: center;
+.title {
+    margin-top: 15px;
+    height: 20px;
+    width: 100%;
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 1px;
-    outline: none;
 }
 
 .editable {
@@ -151,9 +150,9 @@ button {
     width: 100%;
     -webkit-appearance: none;
     line-height: 40px;
-    color: #fff;
+    color: lightseagreen;
     border: none;
-    background-color: #ea4c89;
+    background-color: #fff;
     cursor: pointer;
     margin-top: 30px;
     font-size: 13px;
